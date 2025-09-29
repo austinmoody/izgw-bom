@@ -16,16 +16,20 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
         <!-- Load external properties -->
         <properties.file>izgw-versions.properties</properties.file>
         
         <!-- Spring Boot and Framework versions -->
-        <spring.boot.version>3.1.5</spring.boot.version>
-        <spring.framework.version>6.0.13</spring.framework.version>
-        <spring.security.version>6.1.5</spring.security.version>
+        <spring.boot.version>3.5.5</spring.boot.version>
+        <spring.framework.version>6.2.11</spring.framework.version>
+        <spring.security.version>6.5.4</spring.security.version>
         <spring.data.version>3.1.5</spring.data.version>
+        
+        <!-- Tomcat version -->
+        <tomcat.version>10.1.44</tomcat.version>
         
         <!-- Common dependency versions -->
         <jackson.version>2.15.3</jackson.version>
@@ -35,7 +39,7 @@
         <mockito.version>5.7.0</mockito.version>
         <testcontainers.version>1.19.1</testcontainers.version>
         <httpclient.version>5.2.1</httpclient.version>
-        <commons.lang3.version>3.13.0</commons.lang3.version>
+        <commons.lang3.version>3.18.0</commons.lang3.version>
         <commons.io.version>2.11.0</commons.io.version>
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
         <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
