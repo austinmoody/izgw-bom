@@ -65,9 +65,9 @@ This BOM manages versions for:
 - **Spring Boot** (3.1.5)
 - **Spring Framework** (6.0.13)
 - **Spring Security** (6.1.5)
-- **Jackson** (2.15.3)
-- **JUnit** (5.10.0)
-- **Mockito** (5.7.0)
+- **Jackson** (2.19.2)
+- **JUnit** (5.12.2)
+- **Mockito** (5.17.0)
 - **Testcontainers** (1.19.1)
 - **SLF4J & Logback** for logging
 - **Apache Commons** utilities
