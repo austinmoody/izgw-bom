@@ -71,7 +71,7 @@ This BOM manages versions for:
 - **Testcontainers** (1.19.1)
 - **SLF4J & Logback** for logging
 - **Apache Commons** utilities
-- **Jakarta Validation** and Hibernate Validator
+- **Jakarta Validation** and Hibernate Validator 
 - And more...
 
 ## Files
