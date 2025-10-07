@@ -16,7 +16,28 @@
     <properties>
         <properties.file>izgw-versions.properties</properties.file>
     </properties>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>${properties.file}</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <dependencyManagement>
         <dependencies>
             <!-- Spring Boot BOM -->
@@ -27,7 +48,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
             <!-- Spring Framework -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -36,7 +57,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
             <!-- Spring Security -->
             <dependency>
                 <groupId>org.springframework.security</groupId>
@@ -45,7 +66,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
             <!-- Jackson -->
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
@@ -54,7 +75,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
             <!-- JUnit -->
             <dependency>
                 <groupId>org.junit</groupId>
@@ -63,7 +84,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
             <!-- Individual dependencies -->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -125,7 +146,7 @@
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate.validator.version}</version>
             </dependency>
-            
+
             <!-- HAPI HL7 v2 dependencies -->
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
@@ -235,7 +256,7 @@
                 <artifactId>ulidj</artifactId>
                 <version>${ulidj.version}</version>
             </dependency>
-            
+
             <!-- Additional dependencies -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
