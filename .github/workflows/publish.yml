@@ -3,7 +3,16 @@ name: Publish BOM and Properties to GitHub Packages
 on:
   push:
     branches:
+      - Release*
       - main
+      - develop
+
+  pull_request:
+    branches:
+      - Release*
+      - main
+      - develop
+      
   workflow_dispatch:
 
 jobs:
