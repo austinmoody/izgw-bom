@@ -37,7 +37,7 @@ In your project's `pom.xml`, add this BOM to your `dependencyManagement` section
         <dependency>
             <groupId>gov.cdc.izgw</groupId>
             <artifactId>izgw-bom</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0-RELEASE</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
