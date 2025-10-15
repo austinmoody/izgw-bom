@@ -47,12 +47,19 @@
         <!-- HAPI -->
         <hapi.v2.version>2.6.0</hapi.v2.version>
         <hapi.fhir.version>8.4.0</hapi.fhir.version>
+        <opencsv.version>5.9</opencsv.version>
         <!-- ulidj -->
         <ulidj.version>1.0.4</ulidj.version>
         <!-- Validation -->
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
         <hibernate.validator.version>8.0.3.Final</hibernate.validator.version>
         <nimbus.jose.jwt.version>10.4.2</nimbus.jose.jwt.version>
+        
+        <mysql.version>9.3.0</mysql.version>
+        <aws.sdk.version>2.35.6</aws.sdk.version>
+        <javax.activation.version>1.2.0</javax.activation.version>
+        <camel.version>4.13.0</camel.version>
+
         <!-- Maven plugin versions -->
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>3.2.2</maven.surefire.plugin.version>
