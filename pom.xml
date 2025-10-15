@@ -47,6 +47,7 @@
         <!-- Validation -->
         <jakarta.validation.version>3.0.2</jakarta.validation.version>
         <hibernate.validator.version>8.0.3.Final</hibernate.validator.version>
+        <nimbus.jose.jwt.version>10.4.2</nimbus.jose.jwt.version>
         <!-- Maven plugin versions -->
         <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>3.2.2</maven.surefire.plugin.version>
