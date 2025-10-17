@@ -26,6 +26,7 @@
         <jackson.annotations.version>2.20</jackson.annotations.version>
         <!-- STAX Processing (used in HAPI) -->
         <stax2.version>4.2.2</stax2.version>
+        <saxon.version>12.7</saxon.version>
         <!-- Netty -->
         <netty.version>4.2.6.Final</netty.version>
         <!-- Logging -->
@@ -507,6 +508,10 @@
                 <version>${spring.security.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+            </dependency>
+            <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bc-fips</artifactId>
                 <version>2.1.1</version>
@@ -521,11 +526,15 @@
                 <artifactId>bctls-fips</artifactId>
                 <version>2.1.20</version>
             </dependency>
-            
             <dependency>
                 <groupId>org.codehaus.woodstox</groupId>
                 <artifactId>stax2-api</artifactId>
                 <version>${stax2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sf.saxon</groupId>
+                <artifactId>Saxon-HE</artifactId>
+                <version>${saxon.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springdoc</groupId>
@@ -540,28 +549,23 @@
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-api</artifactId>
-                <version></version>
+                <version>${io.jsonwebtoken.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-impl</artifactId>
                 <version>${io.jsonwebtoken.version}</version>
             </dependency>
-      <dependency>
-          <groupId>io.jsonwebtoken</groupId>
-          <artifactId>jjwt-jackson</artifactId>
-          <version>0.11.5</version>
-      </dependency>
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
-      </dependency>
-      <dependency>
-          <groupId>com.github.seancfoley</groupId>
-          <artifactId>ipaddress</artifactId>
-          <version>5.5.1</version>
-      </dependency>
-
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>0.11.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.seancfoley</groupId>
+                <artifactId>ipaddress</artifactId>
+                <version>5.5.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
