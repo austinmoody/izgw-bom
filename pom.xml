@@ -567,6 +567,7 @@
                         <source>${maven.compiler.source}</source>
                         <target>${maven.compiler.target}</target>
                         <release>${maven.compiler.target}</release>
+                        <parameters>true</parameters>
                     </configuration>
                 </plugin>
                 <plugin>
