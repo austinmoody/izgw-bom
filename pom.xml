@@ -63,7 +63,7 @@
         
         <mysql.version>9.3.0</mysql.version>
         
-        <aws.sdk.version>2.35.6</aws.sdk.version>
+        <aws.sdk.version>2.36.2</aws.sdk.version>
         
         <javax.activation.version>1.2.0</javax.activation.version>
         <camel.version>4.13.0</camel.version>
@@ -520,7 +520,7 @@
 
     <distributionManagement>
         <repository>
-            <id>github</id>
+            <id>github-bom</id>
             <name>GitHub IZGateway Packages</name>
             <url>https://maven.pkg.github.com/IZGateway/izgw-bom</url>
         </repository>
