@@ -171,21 +171,19 @@
             <dependency>
                 <groupId>software.amazon.awssdk</groupId>
                 <artifactId>dynamodb-enhanced</artifactId>
-                <version>${aws.sdk.version}</version>
+                <version>${aws-sdk.version}</version>
             </dependency>
             <dependency>
                 <groupId>software.amazon.awssdk</groupId>
                 <artifactId>sqs</artifactId>
-                <version>${aws.sdk.version}</version>
+                <version>${aws-sdk.version}</version>
             </dependency>
             <dependency>
                 <groupId>software.amazon.awssdk</groupId>
                 <artifactId>secretsmanager</artifactId>
-                <version>${aws.sdk.version}</version>
+                <version>${aws-sdk.version}</version>
             </dependency>
-            
-
-        <dependency>
+            <dependency>
                 <groupId>com.sun.activation</groupId>
                 <artifactId>javax.activation</artifactId>
                 <version>${javax-activation.version}</version>
