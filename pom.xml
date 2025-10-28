@@ -73,7 +73,13 @@
         <maven.failsafe.plugin.version>3.5.4</maven.failsafe.plugin.version>
         <properties.maven.plugin.version>1.2.1</properties.maven.plugin.version>
     </properties>
-    
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub IZGateway Packages</name>
+            <url>https://maven.pkg.github.com/IZGateway/izgw-bom</url>
+        </repository>
+    </distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -515,15 +521,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <distributionManagement>
-        <repository>
-            <id>github-bom</id>
-            <name>GitHub IZGateway Packages</name>
-            <url>https://maven.pkg.github.com/IZGateway/izgw-bom</url>
-        </repository>
-    </distributionManagement>
-
     <build>
         <plugins>
             <plugin>
