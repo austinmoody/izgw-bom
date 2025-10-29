@@ -76,14 +76,6 @@
     </distributionManagement>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-bom</artifactId>
-                <version>${netty.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- CSV and Commons dependencies -->
             <dependency>
                 <groupId>com.opencsv</groupId>
@@ -183,6 +175,15 @@
                 <artifactId>secretsmanager</artifactId>
                 <version>${aws-sdk.version}</version>
             </dependency>
+            <!-- Netty must come after AWS SDK to use the versions specified in netty.version -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-bom</artifactId>
+                <version>${netty.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>com.sun.activation</groupId>
                 <artifactId>javax.activation</artifactId>
