@@ -7,7 +7,7 @@
 
     <groupId>gov.cdc.izgw</groupId>
     <artifactId>izgw-bom</artifactId>
-    <version>1.0.2-RELEASE</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>IZ Gateway Bill of Materials</name>
@@ -75,6 +75,29 @@
             <url>https://maven.pkg.github.com/IZGateway/izgw-bom</url>
         </repository>
     </distributionManagement>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>github-bom</id>
+            <url>https://maven.pkg.github.com/IZGateway/izgw-bom</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
     <dependencyManagement>
         <dependencies>
             <!-- In general, lower level dependencies should appear in the dependency management
