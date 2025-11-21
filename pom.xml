@@ -47,7 +47,8 @@
         <commons-math3.version>3.6.1</commons-math3.version>
         <!-- HAPI -->
         <hapi-v2.version>2.6.0</hapi-v2.version>
-        <hapi-fhir.version>8.4.0</hapi-fhir.version>
+        <hapi-fhir.version>8.4.1</hapi-fhir.version>
+        <hl7-fhir.version>6.7.7</hl7-fhir.version>
         <opencsv.version>5.12.0</opencsv.version>
         <!-- ulidj -->
         <ulidj.version>1.1.0</ulidj.version>
@@ -210,6 +211,11 @@
                 <version>${spring-framework.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework.boot</grou>
+                <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
                 <version>${spring-security.version}</version>
@@ -218,10 +224,6 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-config</artifactId>
                 <version>${spring-security.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
