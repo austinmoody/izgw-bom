@@ -60,7 +60,7 @@
         <nimbus-jose-jwt.version>10.6</nimbus-jose-jwt.version>
         <io-jsonwebtoken.version>0.13.0</io-jsonwebtoken.version>
         <mysql.version>9.5.0</mysql.version>
-        <aws-sdk.version>2.39.1</aws-sdk.version>
+        <aws-sdk.version>2.39.5</aws-sdk.version>
         <camel.version>4.16.0</camel.version>
         <lombok.version>1.18.42</lombok.version>
         <!-- Maven plugin versions -->
