@@ -73,7 +73,7 @@
         <repository>
             <id>github</id>
             <name>GitHub IZGateway Packages</name>
-            <url>https://maven.pkg.github.com/IZGateway/izgw-bom</url>
+            <url>https://maven.pkg.github.com/austinmoody/izgw-bom</url>
         </repository>
     </distributionManagement>
     <repositories>
@@ -90,7 +90,7 @@
         </repository>
         <repository>
             <id>github-bom</id>
-            <url>https://maven.pkg.github.com/IZGateway/izgw-bom</url>
+            <url>https://maven.pkg.github.com/austinmoody/izgw-bom</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -618,13 +618,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub IZGateway Packages</name>
-            <url>https://maven.pkg.github.com/austinmoody/izgw-bom</url>
-        </repository>
-    </distributionManagement>
     <build>
         <plugins>
             <plugin>
